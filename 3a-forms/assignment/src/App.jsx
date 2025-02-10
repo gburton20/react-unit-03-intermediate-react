@@ -5,7 +5,6 @@ import questions from './questions-dev-mode.json';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-
   // My solution:
   // const [formData, checkFormData] = useState(null);
   
