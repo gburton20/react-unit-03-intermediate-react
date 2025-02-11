@@ -1,10 +1,22 @@
 # `useEffect`
 
+State is for component-local data. Props are for passing data to another component. 
+
+State is special because you need to hook into React's machinery to make it happen.
+
+State is for changes in a component that should survive re-render. It's a hook because it hooks into React's machinery to do something outside React's component lifecycle of 'render a component by re-running the function'. 
+
+useEffect is for action you take that are outside the React component _entirely_. 
+
+Typically we want these actions to occur only at a certain time, NOT every time the component re-renders.
+
 Hooks are functions that let you "hook into" React state and lifecycle features from functional components. Hooks don't work inside classes - they're a way to use React features without classes.
 
 We've learned about `useState`, which is a hook for adding state to functional components. There are a few more built-in hooks for accessing React's internals, and you can also create your own hooks. Today we'll be learning about `useEffect`.
 
 `useEffect` is a hook that lets you perform side effects in function components. "Side effects" are things that affect the outside world or come from the outside world, like changing the DOM or fetching data from an API or setting timers.
+
+idempotent - when you run the code with the same inputs, it gives the same outputs every time. 
 
 ### Set Up And Run A New React App
 
